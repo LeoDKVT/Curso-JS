@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sistema de Multas</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        body {
+            background-color:black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            margin: 20px 10px;
+            text-align: center;
+        }
+
+        p {
+            color: #f8e5ee;
+            margin: 20px 10px;
+        }
+        
+        .p1 {
+            text-align: center;
+        }
+
+        strong {
+            color:#816e94;
+            text-transform: uppercase;
+        }
+
+        .caixa {
+            background-color: #114b5f;
+            border: 2px solid #816e94;
+            border-radius: 10px;
+            max-width: 500px;
+            margin: 10px 0px 0px 10px;
+        }
+
+        input {
+            background-color: #816e94;
+            color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            padding: 5px;
+            margin: 2px 0px;
+            width: 80px;
+        }
+
+        .btn:hover {
+            background-color: #574469;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div class="caixa">
+        <h1>Sistema de Multas</h1>
+        <p class="p1">Velocidade do carro: <input type="number" name="txtvel" id="txtvel"> km/h.
+        <input class="btn" type="button" value="verificar" onclick="calcular()"> </p>
+        <div id="res"></div>
+    </div>
+
+    <script>
+        function calcular() {
+            var txtv = window.document.querySelector('#txtvel')
+            var res = window.document.querySelector('#res')
+            var vel = Number(txtv.value)
+            res.innerHTML = `<p>Velocidade mínima permitida é de <strong>60km/h</strong>. Sua Velocidade foi de <strong>${vel}km/h.</strong></p>`
+            if (vel >= 61) {
+                res.innerHTML += `<p>Você foi <strong>multado!!!</strong></p>`
+            }
+            res.innerHTML += `<p>Dirija sempre com cinto de segurança!</p>`
+        }
+    </script>
+</body>
+</html>
