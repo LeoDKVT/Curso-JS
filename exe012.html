@@ -9,7 +9,8 @@
 <body>
     <h1>Horario</h1>
     <script>
-        var hora = 4
+        var agora = new Date()
+        var hora = agora.getHours()
 
         window.alert(`Agora sao ${hora} horas`)
         if (hora < 4){

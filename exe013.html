@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1> Dias da semana</h1>
+
+    <script>
+        var agora = new Date()
+        var dia = agora.getDay()
+        /* 
+        Domingo = 0
+        Segunda = 1
+        Terça = 2
+        Quarta = 3 
+        Quinta = 4
+        Sexta = 5
+        Sábado = 6
+        */
+        window.alert(dia)
+
+        switch(dia) {
+            case 0:
+                window.alert("Domingo")
+                break
+            case 1:
+                window.alert("Segunda")
+                break
+            case 2:
+                window.alert("Terça")
+                break
+            case 3:
+                window.alert("Quarta")
+                break
+            case 4:
+                window.alert("Quinta")
+                break
+            case 5:
+                window.alert("Sexta")
+                break
+            case 6:
+                window.alert("Sábado")
+                break
+            default:
+                window.alert("ERRO")
+                break
+            }
+            </script>
+</body>
+</html>
