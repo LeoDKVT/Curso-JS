@@ -1,12 +1,12 @@
 /*
-var p = 1
-while(p <= 7) {
-    console.log(p)
-    p++
+var z = 1
+while(z <=8) {
+    console.log(z)
+    z++
 }
 */
-console.log('teste')
-for (var p = 1; p <= 4; p++) {
-    console.log(p)
+
+var z = 1
+for(var z = 1;z<=8;z++){
+    console.log(z);
 }
-console.log('fimmmmmmmmm')

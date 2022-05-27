@@ -1,5 +1,0 @@
-var y = 1
-while (y <= 15) {
-    console.log(y)
-    y+ 2
-}
