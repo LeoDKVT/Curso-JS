@@ -15,37 +15,37 @@ function verificar() {
             genero = 'Homem'
             if (idade >=0 && idade < 4) {
                 //bb
-                img.setAttribute('src', '../img/bb-menino.jpg')
+                img.setAttribute('src', 'img/bb-menino.jpg')
             } else if (idade < 18) {
                 //jovem
-                img.setAttribute('src', '../img/criança-menino.jpg')
+                img.setAttribute('src', 'img/criança-menino.jpg')
             } else if (idade < 39) {
                 //adulto
-                img.setAttribute('src', '../img/homem-adulto.jpg')
+                img.setAttribute('src', 'img/homem-adulto.jpg')
             } else if (idade < 50) {
                 //Adulto mais experiente
-                img.setAttribute('src', '../img/homem-40.jpg')
+                img.setAttribute('src', 'img/homem-40.jpg')
             } else {
                 //Idoso
-                img.setAttribute('src', '../img/senhor.jpg')
+                img.setAttribute('src', 'img/senhor.jpg')
             }
         } else if (fsex[1].checked) {
             genero = 'Mulher'
             if (idade >=0 && idade < 4) {
                 //bb
-                img.setAttribute('src', '../img/bb-menina.jpg')
+                img.setAttribute('src', 'img/bb-menina.jpg')
             } else if (idade < 18) {
                 //jovem
-                img.setAttribute('src', '../img/criança-menina.jpg')
+                img.setAttribute('src', 'img/criança-menina.jpg')
             } else if (idade < 39) {
                 //adulto
-                img.setAttribute('src', '../img/mulher-adulta.jpg')
+                img.setAttribute('src', 'img/mulher-adulta.jpg')
             } else if (idade < 60) {
                 //Adulto mais experiente
-                img.setAttribute('src', '../img/mulher-40.jpg')
+                img.setAttribute('src', 'img/mulher-40.jpg')
             } else {
                 //Idoso
-                img.setAttribute('src', '../img/senhora.jpg')
+                img.setAttribute('src', 'img/senhora.jpg')
             }
         }
         res.style.textAlign = 'center'
